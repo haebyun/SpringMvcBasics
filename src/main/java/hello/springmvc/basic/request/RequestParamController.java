@@ -41,4 +41,11 @@ public class RequestParamController {
         log.info("username = {}, age = {}", username, age);
         return "ok";
     }
+
+    @ResponseBody
+    @RequestMapping("/request-param-v4")
+    public String requestParamV4(String username, int age) {
+        log.info("username = {}, age = {}", username, age);
+        return "ok";
+    }
 }
